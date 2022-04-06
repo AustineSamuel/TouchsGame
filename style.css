@@ -1,0 +1,55 @@
+body{
+background-color: black;
+}
+
+#enemy{
+  position: fixed;
+  width:100px;
+  height:150px;
+  background: white;
+}
+
+#enemy:hover,#enemy:target,#enemy:active{
+  opacity:0.7;
+}
+
+.gameOver{
+  animation-name:over;
+  animation-duration:500ms;
+  animation-iteration-count: infinite;
+  border-bottom:10px solid white;
+}
+
+@keyframes over{
+  0%{
+    opacity:0.3;
+    
+  }
+  100%{
+    opacity:2;
+  }
+}
+
+#score{
+  position: fixed;
+  top:0;
+  left:0;
+  font-weight: bold;
+  text-shadow:1px 1px white;
+  padding:20px;font-size:larger;
+}
+.start{
+  display:flex;align-items:center;justify-content: center;bottom:0; height:150px;margin:0 auto;
+  position:fixed;
+  bottom:0;
+  padding:10px;
+  left:50%;
+  right:50%;
+  
+}
+
+.start button{
+  background:white;border-radius: 8px;padding: 10px;font-weight:bold;
+  border: none;
+  min-width:250px;
+}
