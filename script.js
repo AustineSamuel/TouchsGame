@@ -1,10 +1,12 @@
 let score=0;
 let fullScreen=false;
 const audio=document.createElement("audio");
-audio.src="toucheSGame/mixkit-arcade-retro-background-219.wav";
+audio.src="audio1.wav";
  const audio1=document.createElement("audio");
- audio1.src="toucheSGame/mixkit-video-game-retro-click-237.wav";
+ audio1.src="audio.wav";
 audio.autoplay=true
+audio.type="audio/x-wav";
+audio1.type="audio/x-wav"
 onclick=()=>{
   if(!fullScreen){
     document.body.requestFullscreen();
