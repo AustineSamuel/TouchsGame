@@ -70,12 +70,13 @@ cancelAnimationFrame(animation)
       buttons:"Play Next"
     }).then((e)=>{
       gameOver=false
-      animate();
       speed+=1;
       color=colors[random(colors.length-1)];
       score=0;
       audio.play();
 createElement(5);
+animate();
+
     })
   }
  for(let i=0;i<all.length;i++){
