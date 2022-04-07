@@ -60,7 +60,7 @@ let animation=null;
 function animate(){
     createIndex+=speed*2;
   const all=document.querySelectorAll("body #enemy")
-  if(speed>2.5 && all.length < 0){
+  if(speed>2.5 && all.length <= 0){
     gameOver=true
     return swal({
       allowOutsideClick: false,
@@ -108,7 +108,7 @@ function animate(){
    }
   // console.log(getComputedStyle(e).getPropertyValue("marginTop"),e.style.marginTop);
  }
- speed+=0.007;
+ speed+=0.005;
  if(createIndex>360){
    createIndex=Math.floor(Math.random()*180);
    addEnemy();
