@@ -60,13 +60,14 @@ let animation=null;
 function animate(){
     createIndex+=speed*2;
   const all=document.querySelectorAll("body #enemy")
-  if(speed>2.5 && all.length <= 0){
+  if(speed>3.5 && all.length <= 0){
     gameOver=true
+cancelAnimationFrame(animation)
     return swal({
       allowOutsideClick: false,
       title:"You won! | score : "+score,
       text:"You rock , your score is "+score,
-      buttons:["Play Next"]
+      buttons:"Play Next"
     }).then((e)=>{
       gameOver=false
       animate();
