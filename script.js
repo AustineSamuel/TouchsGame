@@ -60,7 +60,7 @@ let animation=null;
 function animate(){
     createIndex+=speed*2;
   const all=document.querySelectorAll("body #enemy")
-  if(speed>3.5 && all.length <= 0){
+  if(speed>3.5 && all.length <= 0 && score > 12){
     gameOver=true
 cancelAnimationFrame(animation)
     return swal({
@@ -74,7 +74,7 @@ cancelAnimationFrame(animation)
       color=colors[random(colors.length-1)];
       score=0;
       audio.play();
-createElement(5);
+createElement(3);
 animate();
 
     })
