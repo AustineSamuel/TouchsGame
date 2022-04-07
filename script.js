@@ -75,6 +75,7 @@ cancelAnimationFrame(animation)
       color=colors[random(colors.length-1)];
       score=0;
       audio.play();
+createElement(5);
     })
   }
  for(let i=0;i<all.length;i++){
